@@ -13,3 +13,9 @@ document.write(ques4);
 // Fifth question
 var ques5 = prompt("what is the biggest Eco park in Finland?");
 document.write(ques5);
+
+if (ques1 == "helsinki"){
+    document.writeln("Congratulation!!!");
+}else{
+    document.writeln("<p>"+ "Your answer " + ques1 + " is wrong.The correct answer is Helsinki"+".</p>");
+}
