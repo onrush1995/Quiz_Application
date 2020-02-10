@@ -10,9 +10,10 @@ score = 0;
 
 // First question
 var ques1 = prompt("What is the capital of Finland?");
-if (ques1 == firstQuesAns){
+var ques1_answer = ques1.toLowerCase();
+if (ques1_answer === firstQuesAns){
     document.writeln("<br>"+"Congratulation!!!, You get one point"+"</br>");
-    if(ques1 == firstQuesAns){
+    if(ques1_answer === firstQuesAns){
         score++;
     }
 }else{
@@ -21,9 +22,10 @@ if (ques1 == firstQuesAns){
 
 // Second question
 var ques2 = prompt("What is the biggest lake in Finland?");
-if (ques2 == secondQuesAns){
+var ques2_answer = ques2.toLowerCase();
+if (ques2_answer == secondQuesAns){
     document.write("<br>"+"Congratulation!!!,You achived one point" +".</br>");
-    if(ques2 == secondQuesAns){
+    if(ques2_answer == secondQuesAns){
         score++;
     }
 }else{
@@ -31,9 +33,10 @@ if (ques2 == secondQuesAns){
 }
 // Third question
 var ques3 = prompt("How many countries share border with Finland?");
-if (ques3 == thirdQuesAns){
+var ques3_answer = ques3.toLowerCase();
+if (ques3_answer == thirdQuesAns){
     document.write("<br>"+"Congratulation!!!, You added one point to your score card"+"</br>");
-    if(ques3 == thirdQuesAns){
+    if(ques3_answer == thirdQuesAns){
         score++;
     }
 }else{
@@ -41,9 +44,10 @@ if (ques3 == thirdQuesAns){
 }
 // Fourth question
 var ques4 = prompt("What is the biggest river in Finland?");
-if (ques4 == fourthQuesAns){
+var ques4_answer = ques4.toLowerCase();
+if (ques4_answer == fourthQuesAns){
     document.write("<br>"+ "Congratulation!!!, You have achived one point"+ "</br>");
-    if(ques4 == fourthQuesAns){
+    if(ques4_answer == fourthQuesAns){
         score++;
     }
 }else{
@@ -51,9 +55,10 @@ if (ques4 == fourthQuesAns){
 }
 // Fifth question
 var ques5 = prompt("what is the biggest Eco park in Finland?");
-if (ques5 == fifthQuesAns){
+var ques5_answer = ques5.toLowerCase();
+if (ques5_answer == fifthQuesAns){
     document.write("<br>"+"Congratulation!!!. You get the last question answer"+"</br>");
-    if(ques5 == fifthQuesAns){
+    if(ques5_answer == fifthQuesAns){
         score++;
     }
 }else{
