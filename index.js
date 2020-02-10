@@ -10,7 +10,7 @@ score = 0;
 
 // First question
 var ques1 = prompt("What is the capital of Finland?");
-if (ques1 == "helsinki"){
+if (ques1 == firstQuesAns){
     document.writeln("<br>"+"Congratulation!!!, You get one point"+"</br>");
     if(ques1 == firstQuesAns){
         score++;
@@ -32,7 +32,7 @@ if (ques2 == secondQuesAns){
 // Third question
 var ques3 = prompt("How many countries share border with Finland?");
 if (ques3 == thirdQuesAns){
-    document.write("<br>" +"Congratulation!!!, You added one point to your score card"+"</br>");
+    document.write("<br>"+"Congratulation!!!, You added one point to your score card"+"</br>");
     if(ques3 == thirdQuesAns){
         score++;
     }
@@ -43,7 +43,7 @@ if (ques3 == thirdQuesAns){
 var ques4 = prompt("What is the biggest river in Finland?");
 if (ques4 == fourthQuesAns){
     document.write("<br>"+ "Congratulation!!!, You have achived one point"+ "</br>");
-    if(ques4==fourthQuesAns){
+    if(ques4 == fourthQuesAns){
         score++;
     }
 }else{
@@ -66,13 +66,14 @@ document.write("<h3>Your socre is " + score + ".</h3>");
 
 
 if(score >= 4){
-    document.write("You earned Gold madel");
+    document.write("You earned <strong>Gold madel.</strong>");
+
 }else if(score >= 3){
-    document.write("You earned Silver madel");
+    document.write("You earned <strong>Silver madel.</strong>");
 }else if (score >=2){
-    document.write("You have earned Bronze madel");
+    document.write("You have earned <strong>Bronze madel.</strong>");
 }else{
-    document.write("Please try again");
+    document.write("<strong>Please try again</strong>");
 }
 
 
