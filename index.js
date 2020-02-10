@@ -70,7 +70,7 @@ if(score >= 4){
 }else if(score >= 3){
     document.write("You earned Silver madel");
 }else if (score >=2){
-    document.write("you have earned Bronze madel");
+    document.write("You have earned Bronze madel");
 }else{
     document.write("Please try again");
 }
